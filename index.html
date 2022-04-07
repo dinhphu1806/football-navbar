@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- header-section-starts -->
+    <header>
+        <div class="logo animate__animated animate__bounce">
+            <p>Manchester United</p>
+        </div>
+
+        <nav class="navbar" id="nav">
+            <ul class="nav-links" id="menu"> 
+                <li><a class="active" href="#">home</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="#">videos</a></li>
+                <li><a href="#">tickets</a></li>
+                <li><a href="#">players</a></li>
+                <li><a href="#">old trafford</a></li>
+                <li><a href="#">more</a></li>
+            </ul>
+        </nav>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+    <!-- header-section-ends -->
+
+    <!-- slider-section-starts -->
+    <section class="slider owl-carousel owl-theme">
+        <!--item 1-->
+        <div class="slider-item">
+           <img src="./image/slide-1.avif" alt="">
+        </div>
+        <!--item 2-->
+        <div class="slider-item">
+            <img src="./image/slide-2.avif" alt="">
+        </div>
+        <!--item 3-->
+        <div class="slider-item">
+            <img src="./image/slide-3.avif" alt="">
+        </div>
+        <!--item 4-->
+        <div class="slider-item">
+            <img src="./image/slide-4.avif" alt="">
+        </div>
+         <!--item 5-->
+         <div class="slider-item">
+            <img src="./image/slide-5.avif" alt="">
+        </div>
+    </section>
+    <!-- slider-section-ends -->
+
+    <!-- banner-section-starts -->
+    <section class="banner">
+        <img src="./image/photo-5.avif" alt="">
+    </section>
+    <!-- banner-section-ends -->
+
+    
+    <script src="./js/bar.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel();
+        });
+
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            responsive:{
+                0:{
+                    items:1,
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>
