@@ -224,7 +224,7 @@ header nav ul li a:hover::after{
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
-/*----------CSS BANNER----------*/
+/*----------CSS BANNER------------*/
 .banner img{
     width: 100%;
     height: 100%;
