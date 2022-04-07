@@ -21,9 +21,10 @@ const navSlide = () => {
             }else {
                 // console.log(index / 7);
                 link.style.animation = `navLinksFadein 0.5s ease forwards ${index / 7 + 0.5}s`
-            }
-        
+            } 
         });
+    // burger animation
+        burger.classList.toggle('toggle');
     });
 }
 navSlide();

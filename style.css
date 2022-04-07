@@ -213,6 +213,17 @@ header nav ul li a:hover::after{
         transform: translateX(0px);
     }
 }
+/* css toggle */
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
 /*----------CSS BANNER----------*/
 .banner img{
     width: 100%;
